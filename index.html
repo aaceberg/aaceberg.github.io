@@ -1,2 +1,45 @@
-Hello World
-Home page of aceberg
+<html>
+   <head>
+      <title>Product & Money</title>
+      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+   </head>
+   <body>
+      <div id="page">
+      <div id="header">
+         <div id="title">
+            <a>Product & Money</a>
+         </div>
+      </div>
+      <div id="banner"></div>
+      <div class="menu">
+         <ul>
+            <li class="current_choice"><span><a href="#">Home</a></span></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Thoughts</a></li>
+            <li><a href="#">Me</a></li>
+            </form>
+      </div>
+      </ul>
+      <div id="search">
+         <form method="get" action="https://duckduckgo.com/">
+            <fieldset>
+               <input name="q"  id="search-text" size="28" value="search">
+            </fieldset>
+         </form>
+      </div>
+   </body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script>
+      var t = [
+				'jiuwei',
+				'nian',
+				'longma',
+				'luduan',
+				'xiezhi',
+				'qilin',
+				'pixiu',
+				'xīniú',
+				'baize'];
+      $('#search-text').val(t[Math.floor(Math.random()*t.length)]);
+   </script>
+ </html>
